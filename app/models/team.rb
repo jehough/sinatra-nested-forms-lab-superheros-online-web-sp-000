@@ -10,6 +10,7 @@ class Team
       Hero.create_from_hash(hero_data)
     end
     team.save
+    team
   end
 
   def save
