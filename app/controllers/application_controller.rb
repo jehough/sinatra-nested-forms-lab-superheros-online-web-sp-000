@@ -10,8 +10,9 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      binding.pry
+      
       @team = Team.create_from_params(params["team"])
+      binding.pry
       @heroes = Hero.all
 
       erb :team
