@@ -13,7 +13,7 @@ class App < Sinatra::Base
 
       @team = Team.create_from_params(params["team"])
       @heroes = Hero.all
-      binding.pry
+
       erb :team
     end
 end
