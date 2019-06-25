@@ -2,7 +2,7 @@ class Team
   attr_accessor :name, :motto
   @@all = []
 
-  def create_from_params(params)
+  def self.create_from_params(params)
     team = Team.new
     team.name = params["name"]
     team.motto = params["motto"]
