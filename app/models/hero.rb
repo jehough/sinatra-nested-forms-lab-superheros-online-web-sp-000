@@ -2,7 +2,7 @@ class Hero
   attr_accessor :name, :power, :bio
   @@all = []
 
-  def create_from_hash(hash)
+  def self.create_from_hash(hash)
     hero = Hero.new
     hero.attrs_from_hash(hash)
     hero.save
