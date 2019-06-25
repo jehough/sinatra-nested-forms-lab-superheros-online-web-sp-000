@@ -12,7 +12,6 @@ class App < Sinatra::Base
     post '/teams' do
 
       @team = Team.create_from_params(params["team"])
-      binding.pry
       @heroes = Hero.all
 
       erb :team
